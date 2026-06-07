@@ -1,0 +1,15 @@
+[package]
+name = "alpha158-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alpha158-ops = { path = "../alpha158-ops" }
+alpha158-memory = { path = "../alpha158-memory" }
+alpha158-data = { path = "../alpha158-data" }
+alpha158-factors = { path = "../alpha158-factors" }
+alpha158-cache = { path = "../alpha158-cache" }
+rayon = { workspace = true }
+arrow = { workspace = true }
+parquet = { workspace = true }
+tracing = "0.1"

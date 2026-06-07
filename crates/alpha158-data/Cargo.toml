@@ -1,0 +1,10 @@
+[package]
+name = "alpha158-data"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alpha158-memory = { path = "../alpha158-memory" }
+arrow = { workspace = true }
+parquet = { workspace = true }
+ahash = { workspace = true }

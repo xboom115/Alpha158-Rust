@@ -1,0 +1,38 @@
+[workspace]
+members = [
+    "crates/alpha158-ops",
+    "crates/alpha158-memory",
+    "crates/alpha158-data",
+    "crates/alpha158-factors",
+    "crates/alpha158-cache",
+    "crates/alpha158-core",
+]
+resolver = "2"
+
+[package]
+name = "alpha158-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "alpha158"
+path = "src/main.rs"
+
+[dependencies]
+alpha158-core = { path = "crates/alpha158-core" }
+alpha158-data = { path = "crates/alpha158-data" }
+clap = { version = "4", features = ["derive"] }
+rayon = "1.10"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt"] }
+
+[workspace.dependencies]
+arrow = { version = "54" }
+parquet = { version = "54" }
+rayon = "1.10"
+parking_lot = "0.12"
+ahash = "0.8"
+ordered-float = "4"
+
+[profile.release]
+opt-level = 3

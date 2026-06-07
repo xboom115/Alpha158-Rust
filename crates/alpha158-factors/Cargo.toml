@@ -1,0 +1,10 @@
+[package]
+name = "alpha158-factors"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alpha158-ops = { path = "../alpha158-ops" }
+alpha158-memory = { path = "../alpha158-memory" }
+alpha158-data = { path = "../alpha158-data" }
+ahash = { workspace = true }
