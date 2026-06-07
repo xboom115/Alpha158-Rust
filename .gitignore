@@ -2,6 +2,12 @@
 /target/
 **/target/
 
+# Qlib source (reference only, don't commit)
+/qlib-main/
+
+# Parquet data files
+*.parquet
+
 # Cargo lock (for libraries, optional)
 # Cargo.lock
 

@@ -24,11 +24,7 @@ pub fn rolling_regression(
         return;
     }
 
-    let w = window as f64;
-    // x = [1, 2, ..., window] (1-based)
-    let sum_x = w * (w + 1.0) / 2.0; // Σx = 1+2+...+w = w*(w+1)/2
-    let sum_x2 = w * (w + 1.0) * (2.0 * w + 1.0) / 6.0; // Σx² = w*(w+1)*(2w+1)/6
-    let denom_x = w * sum_x2 - sum_x * sum_x;
+    let _w = window as f64;
 
     // 环形缓冲
     let mut ring = vec![0.0f64; window];

@@ -61,8 +61,7 @@ pub fn rolling_corr(
     let mut sxx = 0.0f64;
     let mut syy = 0.0f64;
     let mut sxy = 0.0f64;
-    let w = window as f64;
-    let inv_w = 1.0 / w;
+    let _w = window as f64;
 
     for i in 0..n {
         if i >= window {
